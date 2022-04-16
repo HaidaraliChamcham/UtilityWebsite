@@ -57,7 +57,7 @@ function NavBar(props: any) {
             </Box>
         </Drawer>
     );
-    
+
     return (
         <BrowserRouter>
             <Box sx={{ display: 'flex' }}>
@@ -66,17 +66,15 @@ function NavBar(props: any) {
                 <>
                     {drawer}
                     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+                        <Toolbar />
+                        <Routes>
+                            {RouteElement.map((Item, index) => (
+                                <Route key={Item.path} path={Item.path} element={<Item.Component />}>
+                                </Route>))}
+
+                        </Routes>
                     </Box>
                 </>
-            </Box>
-            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                <Toolbar />
-                <Routes>
-                    {RouteElement.map((Item, index) => (
-                        <Route key={Item.path} path={Item.path} element={<Item.Component />}>
-                        </Route>))}
-
-                </Routes>
             </Box>
 
         </BrowserRouter>
