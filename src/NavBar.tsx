@@ -22,7 +22,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const drawerWidth = 240;
 
 function NavBar(props: any) {
-    debugger
 
     const header = (
         <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, background: "#5f6a97" }}>
@@ -78,7 +77,7 @@ function NavBar(props: any) {
                 <>
                     {drawer}
                     <Toolbar />
-                    <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "2rem" }}>
+                    <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "3rem" }}>
                         <Routes>
                             {RouteElement.map((Item, index) => (
                                 <Route key={Item.path} path={Item.path} element={<Item.Component />}>

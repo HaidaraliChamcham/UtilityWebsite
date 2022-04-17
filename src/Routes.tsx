@@ -1,10 +1,6 @@
 import React from 'react';
+import Dashboard from './Dashboard';
 
-const Dashboard = () => {
-  return (
-    <h1>Get Started</h1>
-  );
-};
 
 const Install = () => {
   return (
@@ -36,11 +32,12 @@ const Support = () => {
     )
 }
 
+
 const RouteElement = [
   {
     path: '/',
     Component: Dashboard,
-    label: 'Home'
+    label: 'Dashboard'
   },
   {
     path: '/Install',
