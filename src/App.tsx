@@ -1,10 +1,13 @@
 import React from 'react';
 import NavBar from './NavBar';
+import Footer from './UtilityFooter';
+
 
 function App() {
   return (
-    <div className="App">
-          <NavBar />
+    <div style={{background: "#dfdcc5"}} >
+      <NavBar />
+      <Footer/>
     </div>
   );
 }

@@ -25,7 +25,7 @@ function NavBar(props: any) {
     debugger
 
     const header = (
-        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, background: "#5f6a97" }}>
             <Toolbar style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
                     <MenuOpenIcon />
@@ -48,8 +48,8 @@ function NavBar(props: any) {
             sx={{
                 width: drawerWidth,
                 flexShrink: 0,
-                
-                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
+                height:  "90vh",                
+                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', height: "90vh", background:"#fffafa" },
             }}
         >            <Toolbar />
             <Box sx={{ overflow: 'auto' }}>
@@ -57,9 +57,10 @@ function NavBar(props: any) {
                     {RouteElement.map((item, index) => (
                         <Link to={item.path} style={{ textDecoration: "none", color: "#000000de", fontWeight: "400" }}>
                             <ListItem key={item.path} button>
-                                <ListItemIcon >
+                                {/* commented for now
+                                 <ListItemIcon >
                                     <ArrowRightIcon style={{ display: "flex", alignItems: "center" }} />
-                                </ListItemIcon>
+                                </ListItemIcon> */}
                                 <ListItemText primary={item.label} />
                             </ListItem>
                         </Link>

@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.utility-web-footer{
+  margin-top: 1rem;
+  padding: 0.1rem;
+  background-color: #46474e;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #92929c;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #b8c2ca
+}
+
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: #b8c2ca
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #b8c2ca
+}
+
+a:active {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #b8c2ca
+}

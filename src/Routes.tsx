@@ -40,28 +40,28 @@ const RouteElement = [
   {
     path: '/',
     Component: Dashboard,
-    label: 'Get Started'
+    label: 'Home'
   },
   {
     path: '/Install',
     Component: Install,
-    label: 'Install'
+    label: 'Installation'
   },
-  {
-    path: '/Information',
-    Component: Information,
-    label: 'All Props',
-  },
+  // {
+  //   path: '/Information',
+  //   Component: Information,
+  //   label: 'All Props',
+  // },
   {
     path: '/Features',
     Component: Features,
-    label: 'Features',
+    label: 'Key Features',
   },
-  {
-    path: '/Support',
-    Component: Support,
-    label: 'Support',
-  },
+  // {
+  //   path: '/Support',
+  //   Component: Support,
+  //   label: 'Support',
+  // },
 ];
 
 export default RouteElement;
