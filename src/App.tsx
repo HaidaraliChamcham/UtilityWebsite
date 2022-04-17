@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import NavBar from './NavBar';
 
 function App() {
   return (
     <div className="App">
-      "Hi This is test"
+          <NavBar />
     </div>
   );
 }

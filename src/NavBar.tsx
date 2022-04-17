@@ -77,7 +77,7 @@ function NavBar(props: any) {
                 <>
                     {drawer}
                     <Toolbar />
-                    <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+                    <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "2rem" }}>
                         <Routes>
                             {RouteElement.map((Item, index) => (
                                 <Route key={Item.path} path={Item.path} element={<Item.Component />}>
