@@ -15,7 +15,9 @@ import MailIcon from '@mui/icons-material/Mail';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { BrowserRouter, Link, NavLink, Route, Router, Routes } from 'react-router-dom';
 import RouteElement from './Routes';
-import { WifiTetheringOutlined } from '@mui/icons-material';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const drawerWidth = 240;
 
@@ -24,10 +26,18 @@ function NavBar(props: any) {
 
     const header = (
         <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
-            <Toolbar>
-                <Typography variant="h6" noWrap component="div">
-                    React-Utility-Table
-                </Typography>
+            <Toolbar style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+                    <MenuOpenIcon />
+                    <Typography variant="h6" noWrap component="div">
+                        React-Utility-Table
+                    </Typography>
+                </div>
+                <div>
+                    <GitHubIcon />
+                </div>
+
+
             </Toolbar>
         </AppBar>
     );
@@ -38,17 +48,18 @@ function NavBar(props: any) {
             sx={{
                 width: drawerWidth,
                 flexShrink: 0,
+                
                 [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
             }}
         >            <Toolbar />
             <Box sx={{ overflow: 'auto' }}>
                 <List>
                     {RouteElement.map((item, index) => (
-                        <Link to={item.path}>
+                        <Link to={item.path} style={{ textDecoration: "none", color: "#000000de", fontWeight: "400" }}>
                             <ListItem key={item.path} button>
-                                {/* <ListItemIcon>
-                                    <InboxIcon />
-                                </ListItemIcon> */}
+                                <ListItemIcon >
+                                    <ArrowRightIcon style={{ display: "flex", alignItems: "center" }} />
+                                </ListItemIcon>
                                 <ListItemText primary={item.label} />
                             </ListItem>
                         </Link>
@@ -65,13 +76,12 @@ function NavBar(props: any) {
                 {header}
                 <>
                     {drawer}
+                    <Toolbar />
                     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                        <Toolbar />
                         <Routes>
                             {RouteElement.map((Item, index) => (
                                 <Route key={Item.path} path={Item.path} element={<Item.Component />}>
                                 </Route>))}
-
                         </Routes>
                     </Box>
                 </>
