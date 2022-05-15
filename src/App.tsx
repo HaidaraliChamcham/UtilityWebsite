@@ -7,7 +7,7 @@ import basetheme from './basetheme';
 
 function App() {
   return (
-    <div style={{background: "#dfdcc5"}} >
+    <div style={{background: "#e9e9ec"}} >
       <ThemeProvider theme={basetheme}>
       <NavBar />
       <Footer/>
