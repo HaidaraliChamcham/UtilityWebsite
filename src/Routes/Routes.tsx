@@ -1,28 +1,8 @@
 import React from 'react';
 import Dashboard from '../Mains/Dashboard';
-import Install from '../Mains/Install'
+import Install from '../Mains/Install';
+import Features from '../Mains/Features'
 
-
-// const Install = () => {
-//   return (
-//     <h1>Install</h1>
-//   );
-// };
-
-const Information = () => {
-  return (
-    <h1>All Props</h1>
-  );
-};
-
-const Features = () => {
-    return(
-        <h1>
-            Features
-        </h1>
-
-    )
-}
 
 const Support = () => {
     return(
@@ -45,11 +25,6 @@ const RouteElement = [
     Component: Install,
     label: 'Installation'
   },
-  // {
-  //   path: '/Information',
-  //   Component: Information,
-  //   label: 'All Props',
-  // },
   {
     path: '/Features',
     Component: Features,

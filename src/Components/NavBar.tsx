@@ -24,7 +24,7 @@ const drawerWidth = 240;
 function NavBar(props: any) {
 
     const header = (
-        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, background: "#5f6a97" }}>
+        <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, background: "#26c6da" }}>
             <Toolbar style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
                     <MenuOpenIcon />
@@ -48,7 +48,7 @@ function NavBar(props: any) {
                 width: drawerWidth,
                 flexShrink: 0,
                 height:  "90vh",                
-                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', height: "90vh", background:"#fffafa" },
+                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', height: "90vh", background:"#bdd0d317" },
             }}
         >            <Toolbar />
             <Box sx={{ overflow: 'auto' }}>

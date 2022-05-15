@@ -1,5 +1,6 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import { ReactUtilityTable } from 'react-utility-table';
 
 const Install = (props: any) => {
   debugger
@@ -9,6 +10,9 @@ const Install = (props: any) => {
         Installation----Getting Started!
       </Typography>
       <Typography variant="h6">
+        {`To install this package :
+         npm i react-utility-table`}
+       
        
       </Typography>
     </>
