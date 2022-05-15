@@ -1,8 +1,7 @@
-import React from 'react';
 import Dashboard from '../Mains/Dashboard';
-import Install from '../Mains/Install';
-import Features from '../Mains/Features'
-
+// import Install from '../Mains/Install';
+import Features from '../Mains/Features';
+import DemoPage from '../Demo/Demo';
 
 const Support = () => {
     return(
@@ -20,16 +19,21 @@ const RouteElement = [
     Component: Dashboard,
     label: 'Dashboard'
   },
-  {
-    path: '/Install',
-    Component: Install,
-    label: 'Installation'
-  },
+  // {
+  //   path: '/Install',
+  //   Component: Install,
+  //   label: 'Installation'
+  // },
   {
     path: '/Features',
     Component: Features,
     label: 'Key Features',
   },
+  {
+    path: '/Demo',
+    Component: DemoPage,
+    label: 'Demo'
+  }
   // {
   //   path: '/Support',
   //   Component: Support,

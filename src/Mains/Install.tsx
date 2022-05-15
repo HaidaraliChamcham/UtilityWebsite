@@ -7,10 +7,10 @@ const Install = (props: any) => {
   return (
     <>
       <Typography gutterBottom variant="h4">
-        Installation----Getting Started!
+        Installation---Getting Started!
       </Typography>
       <Typography variant="h6">
-        {`To install this package :
+        {`Install this package :
          npm i react-utility-table`}
        
        
