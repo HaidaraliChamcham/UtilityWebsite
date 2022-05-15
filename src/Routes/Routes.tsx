@@ -1,12 +1,13 @@
 import React from 'react';
-import Dashboard from './Dashboard';
+import Dashboard from '../Mains/Dashboard';
+import Install from '../Mains/Install'
 
 
-const Install = () => {
-  return (
-    <h1>Install</h1>
-  );
-};
+// const Install = () => {
+//   return (
+//     <h1>Install</h1>
+//   );
+// };
 
 const Information = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './NavBar';
-import Footer from './UtilityFooter';
+import NavBar from '../Components/NavBar';
+import Footer from '../UtilityFooter';
 import { ThemeProvider } from '@mui/material/styles';
-import basetheme from './basetheme';
+import basetheme from '../Themes/basetheme';
 
 
 function App() {
