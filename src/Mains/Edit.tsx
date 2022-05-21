@@ -1,29 +1,26 @@
-import { Grid } from '@mui/material'
-import React from 'react'
-import {
-    LiveProvider,
-    LiveEditor,
-    LiveError,
-    LivePreview
-} from 'react-live'
+import React, { useState } from "react";
+import { ReactUtilityTable } from "react-utility-table";
+import Layout from "../Components/Layout";
+
+
 
 export default function Edit() {
+    const [Code, setCode] = useState(`function Demo {
+        const [data, setData] = React.useState([{
+            {"first_name":"Fielding","last_name":"Widdecombe","gender":"Male"},
+            {"first_name":"Coleman","last_name":"Rabjohn","gender":"Male"}
+        }]);
+        return (
+            <ReactUtilityTable data={[]} columns={[]} />
+        );
+    }
+      
+      `)
     return (
-        <>
-            <Grid container item xs={12}>
-                <Grid item xs={5}>
-                    hi
-                    {/* <LiveProvider code="<strong>Hello World!</strong>">
-                        <LiveEditor />
-                        <LiveError />
-                        <LivePreview />
-                    </LiveProvider> */}
-                </Grid>
-                <Grid item xs={12}>
-                    hi
-                </Grid>
+        <Layout code={Code}
 
-            </Grid>
-        </>
-    )
+        ui={<ReactUtilityTable data={[]} columns={[]} />}
+        />
+
+    );
 }
