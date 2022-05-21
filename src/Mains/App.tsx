@@ -79,10 +79,12 @@ const App = () => {
             scrollButtons="auto" allowScrollButtonsMobile
             aria-label="scrollable auto tabs example" color="seconday">
             {/* <Tab icon={<DashboardOutlinedIcon />} label="Dashboard" /> */}
-            <Tab label="Dashboard" />
-            <Tab label="Account" />
-            <Tab label="Consents" />
-            <Tab label="Profile" />
+            <Tab label="Welcome" />
+            <Tab label="Edit" />
+            <Tab label="Styling" />
+            <Tab label="Filter" />
+            <Tab label="Excel Download" />
+            <Tab label="Other Feature" />
 
           </Tabs>
           {/* <Box>Logout </Box> */}
