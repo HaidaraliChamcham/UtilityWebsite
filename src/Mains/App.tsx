@@ -83,6 +83,7 @@ const App = () => {
             <Tab label="Edit" />
             <Tab label="Styling" />
             <Tab label="Filter" />
+            <Tab label="Selection" />
             <Tab label="Excel Download" />
             <Tab label="Other Feature" />
 
