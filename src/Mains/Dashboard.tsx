@@ -7,13 +7,13 @@ const Dashboard = (props: any) => {
   debugger
   return (
     <>
-      <Typography gutterBottom variant="h4">
-        About
-      </Typography>
-      <Typography variant="h6">
-        {`React-Utility-Table is built with React and Typescript. It allows
-        all the CRUD operation to be done that a table must have features with Excel Download option.`}
-      </Typography>
+      <div>
+        <p>
+          This utility-table is built with <strong>React</strong> and <strong>Typescript</strong>.
+          <br></br>
+          It allows all the <strong>CRUD operation</strong> to be done that a table must have features with <strong>Excel Download option</strong>.
+        </p>
+      </div>
       <div style={{ marginTop: "1rem" }}>
         <Install />
       </div>

@@ -4,7 +4,9 @@ import React from 'react';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
 import PropTypes from 'prop-types';
-import Header from './Header';
+import Header from './Mains/Header';
+import Dashboard from './Mains/Dashboard';
+import Edit from './Mains/Edit';
 
 // import { makeStyles } from '@mui/styles';
 
@@ -92,10 +94,10 @@ const App = () => {
         </Box>
         <Grid item xs={12} className="top-margin-tabs" >
           <TabPanel value={value} index={0}>
-            Item1
+            <Dashboard/>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            Item 2
+            <Edit/>
           </TabPanel>
           <TabPanel value={value} index={2}>
             item3
