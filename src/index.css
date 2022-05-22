@@ -20,6 +20,10 @@ code {
     color: #92929c;
 }
 
+.prism-code {
+    background-color: #091926 !important;
+}
+
 a:link {
     text-decoration: none;
     cursor: pointer;
