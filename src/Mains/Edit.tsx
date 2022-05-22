@@ -32,7 +32,7 @@ export default function Edit() {
                   <input value={rowData.first_name} type="button"
                     onClick={() => 
                       alert(rowData.first_name
-                         + rowData.last_name)} />
+                        + "" + rowData.last_name)} />
               },
               {
                 title: "Email", field: "email", editComponent: props => (
