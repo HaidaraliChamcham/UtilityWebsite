@@ -123,7 +123,7 @@ const App = () => {
       </Grid>
       <footer style={{ position: "absolute", bottom: "0px", width: "100%", }}>
 
-        <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by Haidarali and Benazir Chamcham</div>
+        {/* <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by Haidarali and Benazir Chamcham</div> */}
       </footer>
     </div>
   );
