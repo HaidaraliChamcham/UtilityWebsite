@@ -1,26 +1,21 @@
 import { Grid } from '@mui/material'
-import MDEditor from '@uiw/react-md-editor'
 import React from 'react'
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live'
+import Demo from '../Demo/Demo';
 
 export default function Edit() {
+   
+
     return (
         <>
-            <Grid container item xs={12}>
 
-                <Grid item xs={10}>
-                <MDEditor
-                        value={"hi"}
-                    />
-                </Grid>
-                    {/* <LiveProvider code="<strong>Hello World!</strong>">
-                        <LiveEditor />
-                        <LiveError />
-                        <LivePreview />
-                    </LiveProvider> */}
-                   
+            <LiveProvider code="<strong>Hello World!</strong>">
+                <LiveEditor />
+                <LiveError />
+                <LivePreview />
+            </LiveProvider>
 
-            </Grid>
+            
         </>
     )
 }
