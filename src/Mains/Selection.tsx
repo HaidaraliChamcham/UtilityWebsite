@@ -7,7 +7,7 @@ import Layout from '../Components/Layout';
 import theme from 'prism-react-renderer/themes/nightOwl'
 
 
-export default function Edit() {
+export default function Selection() {
   const scope = { ReactUtilityTable };
   
   return (
@@ -22,9 +22,17 @@ export default function Edit() {
           return (
             <div>
               <ReactUtilityTable
-                data={tableData} columns={[
+                data={tableData} 
+                columns={[
                   { title: "Name", field: "firstName" }
                 ]}
+                options={{
+                    selection: true,
+                    // selectAll:true,
+                    // selectionTitle:"Check All"                   
+                }}
+                // onSelectionChange={(selectedRow: any) => console.log(selectedRow)}
+           
               />
             </div>
           );

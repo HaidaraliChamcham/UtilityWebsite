@@ -7,6 +7,8 @@ import PropTypes from 'prop-types';
 import Header from './Mains/Header';
 import Dashboard from './Mains/Dashboard';
 import Edit from './Mains/Edit';
+import Filter from './Mains/Filter';
+import Selection from './Mains/Selection';
 
 // import { makeStyles } from '@mui/styles';
 
@@ -104,7 +106,11 @@ const App = () => {
 
           </TabPanel>
           <TabPanel value={value} index={3}>
-            item 4
+            <Filter />
+          </TabPanel>
+
+          <TabPanel value={value} index={4}>
+            <Selection />
           </TabPanel>
 
         </Grid>
