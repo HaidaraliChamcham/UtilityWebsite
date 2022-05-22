@@ -15,7 +15,8 @@ export default function Selection() {
 
       <LiveProvider code={`
 
-      // Please uncomment the commented lines of code after install  react-utility-table to access full features
+        //import React from 'react';
+        //import { ReactUtilityTable } from 'react-utility-table';
       
          function demo() {
           const [tableData, setTableData] = React.useState([
@@ -34,8 +35,8 @@ export default function Selection() {
                     // selectAll:true,
                     // selectionTitle:"Check All"                   
                 }}
-                // onSelectionChange={(selectedRow: any) => console.log(selectedRow)}
-           
+                // for typescript onSelectionChange={(selectedRow: any) => console.log(selectedRow)}
+                onSelectionChange={(selectedRow) => console.log(selectedRow)}
               />
             </div>
           );

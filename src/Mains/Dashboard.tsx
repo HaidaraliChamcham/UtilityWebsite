@@ -9,7 +9,7 @@ const Dashboard = (props: any) => {
     <>
       <div>
         <p>
-          This utility-table is built with <strong>React</strong> and <strong>Typescript</strong>.
+          This utility-table is built with <strong>React, HTML5, CSS3 </strong> and <strong>Typescript</strong>.
           <br></br>
           It allows all the <strong>CRUD operation</strong> to be done that a table must have features with <strong>Excel Download option</strong>.
         </p>
