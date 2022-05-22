@@ -13,9 +13,9 @@ export default function Edit() {
                         <LiveError />
                         <LivePreview />
                     </LiveProvider> */}
-                      <MDEditor
-        value={"hi"}
-      />
+                    <MDEditor
+                        value={"hi"}
+                    />
                 </Grid>
                 <Grid item xs={7}>
                     hi

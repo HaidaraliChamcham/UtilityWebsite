@@ -85,6 +85,7 @@ const App = () => {
             <Tab label="Edit" />
             <Tab label="Styling" />
             <Tab label="Filter" />
+            <Tab label="Selection" />
             <Tab label="Excel Download" />
             <Tab label="Other Feature" />
 
@@ -109,7 +110,7 @@ const App = () => {
         </Grid>
 
       </Grid>
-      <footer style={{ position: "absolute", bottom: "0xp", width: "100%", }}>
+      <footer style={{ position: "absolute", bottom: "0px", width: "100%", }}>
 
         <div style={{padding:"5px 10px", textAlign:'right'}}>Created by Haidarali and Benazir Chamcham</div>
       </footer>
