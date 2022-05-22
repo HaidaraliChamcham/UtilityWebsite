@@ -30,7 +30,9 @@ export default function Edit() {
                 title: "Last Name", field: "last_name",
                 render: (rowData) =>
                   <input value={rowData.first_name} type="button"
-                    onClick={() => alert(rowData.first_name + rowData.last_name)} />
+                    onClick={() => 
+                      alert(rowData.first_name
+                         + rowData.last_name)} />
               },
               {
                 title: "Email", field: "email", editComponent: props => (
@@ -76,6 +78,11 @@ export default function Edit() {
     }`
   return (
     <>
+    <div>
+      <p>
+      <strong> PlayGround for editable: </strong>
+      </p>
+    </div>
       <LiveProvider code={code}
         scope={scope}
         theme={theme}
