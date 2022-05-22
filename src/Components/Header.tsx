@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header style={{
             display: "flex", justifyContent: "space-between", alignItems: "center",
-            width: "inherit", margin: ".5rem 2rem", gap: "1rem"
+            width: "inherit", margin: ".4rem 2rem", gap: "1rem"
         }}>
             <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
                 <LogoIcon />

@@ -4,7 +4,7 @@ import React from 'react';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
 import PropTypes from 'prop-types';
-import Header from './Mains/Header';
+import Header from './Components/Header';
 import Dashboard from './Mains/Dashboard';
 import Edit from './Mains/Edit';
 import Filter from './Mains/Filter';
