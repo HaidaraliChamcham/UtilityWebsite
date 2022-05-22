@@ -7,7 +7,7 @@ import Layout from '../Components/Layout';
 import theme from 'prism-react-renderer/themes/nightOwl'
 
 
-export default function Selection() {
+export default function ExportExcel() {
   const scope = { ReactUtilityTable };
   
   return (
@@ -25,16 +25,16 @@ export default function Selection() {
           return (
             <div>
               <ReactUtilityTable
+              title="Excel Download"
                 data={tableData} 
                 columns={[
                   { title: "Name", field: "firstName" }
                 ]}
                 options={{
-                    selection: true,
-                    // selectAll:true,
-                    // selectionTitle:"Check All"                   
+                    exportButton:true ,
+                    // exportFileName:"example"   default title is set            
                 }}
-                // onSelectionChange={(selectedRow: any) => console.log(selectedRow)}
+                
            
               />
             </div>
