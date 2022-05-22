@@ -12,15 +12,15 @@ export default function Header() {
         }}>
             <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
                 <LogoIcon />
-                <Typography variant="h5" gutterBottom component="div" style={{ margin: "0px" }}>
+              <a href="https://www.npmjs.com/package/react-utility-table" style={{textDecoration:"none"}}> <Typography variant="h5" gutterBottom component="div" style={{ margin: "0px", color:"#000",  }} >
                     React Utility Table
-                </Typography>
+                </Typography></a> 
             </div>
 
             <div style={{ display: "flex", gap: ".8rem" }}>
                 <GitHubIcon />
-                <LinkedInIcon />
-                <PowerSettingsNewIcon />
+                {/* <LinkedInIcon />
+                <PowerSettingsNewIcon /> */}
             </div>
 
         </header>

@@ -127,7 +127,7 @@ const App = () => {
 
       </Grid>
       <footer style={{ position: "fixed", width: "100%", }}>
-        <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by <a target={"_blank"} href={"https://www.linkedin.com/in/haidaralichamcham/"}> Haidar </a>
+        <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by <a target={"_blank"} href={"https://www.linkedin.com/in/haidaralichamcham/"}> Haidarali </a>
         and <a target={"_blank"} href={"https://www.linkedin.com/in/benazir-mulla/"}> Benazir</a></div>
       </footer>
     </div>

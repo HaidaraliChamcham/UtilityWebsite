@@ -9,7 +9,9 @@ import theme from 'prism-react-renderer/themes/nightOwl';
 export default function Edit() {
   const scope = { ReactUtilityTable };
   const code =
-    `function demo() {
+    `   //import React from 'react';
+    //import { ReactUtilityTable } from 'react-utility-table';
+    function demo() {
       const [tableData, setTableData] = React.useState([{
         "first_name": "Dmitri",
         "last_name": "Pickburn",
@@ -78,11 +80,7 @@ export default function Edit() {
     }`
   return (
     <>
-    <div>
-      <p>
-      <strong> PlayGround for editable: </strong>
-      </p>
-    </div>
+    
       <LiveProvider code={code}
         scope={scope}
         theme={theme}

@@ -9,14 +9,13 @@ import theme from 'prism-react-renderer/themes/nightOwl'
 
 export default function Styling() {
     const scope = { ReactUtilityTable };
-   
+
     return (
         <>
-
             <LiveProvider code={`
         //import React from 'react';
         //import { ReactUtilityTable } from 'react-utility-table';
-        
+
          function demo() {
             const [tableData, setTableData] = React.useState([
                 { firstName: "Benazir", surname: "Chamcham" },
@@ -27,7 +26,8 @@ export default function Styling() {
                     <ReactUtilityTable
                         data={tableData}
                         columns={[
-                            { title: "Name", field: 'firstName',cellStyle:{backgroundColor:"black",color:"#fff"} },
+                            { title: "Name", field: 'firstName',
+                            cellStyle:{backgroundColor:"black",color:"#fff"} },
                         ]}
                         options={{
                             headerStyle: {
@@ -54,7 +54,7 @@ export default function Styling() {
                 />
                 <LiveError />
             </LiveProvider>
-            
+
 
         </>
     )

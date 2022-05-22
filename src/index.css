@@ -52,7 +52,14 @@ body ::-webkit-scrollbar {
     border-radius: 2rem !important;
 }
 
-.prism-code {
+.installation .prism-code {
+    background-color: #091926 !important;
+    border-radius: 5px;
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.overide-hight .prism-code {
     background-color: #091926 !important;
     border-radius: 5px;
     height: 25rem;
@@ -60,21 +67,20 @@ body ::-webkit-scrollbar {
 }
 
 a:link {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
-    color: #b8c2ca
+    color: #0079db
 }
 
 a:visited {
     text-decoration: none;
     cursor: pointer;
-    color: #b8c2ca
+    color: #0079db
 }
 
 a:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: #b8c2ca
 }
 
 a:active {
@@ -140,7 +146,7 @@ a:active {
 }
 
 .top-margin-tabs {
-    margin: 1rem 2.2rem 0 !important;
+    margin: .5rem 2rem 2.2rem !important;
 }
 
 .da-account {

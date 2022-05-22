@@ -17,15 +17,23 @@ export default function Filter() {
           //import React from 'react';
           //import { ReactUtilityTable } from 'react-utility-table';
          function demo() {
-          const [tableData, setTableData] = React.useState([
-            { firstName: "Benazir", surname: "Chamcham" },
-            { firstName: "Haidarali", surname: "Chamcham" }
-          ]);
+          const [tableData, setTableData] = React.useState([{
+            "first_name": "Dmitri",
+            "last_name": "Pickburn",
+            "email": "dpickburn0@google.fr"
+          },
+          {
+            "first_name": "Darelle",
+            "last_name": "Whitlow",
+            "email": "dwhitlow1@tumblr.com"
+          }]);
           return (
             <div>
               <ReactUtilityTable
-                data={tableData} columns={[
-                  { title: "Name", field: "firstName" }
+                data={tableData}   columns={[
+                  { title: "Name", field: "first_name" },
+                  {title: "Name", field: "last_name",filtering:false  },
+                  {title: "Name", field: "email", },
                 ]}
 
                 options={{

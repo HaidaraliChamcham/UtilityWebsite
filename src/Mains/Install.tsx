@@ -12,31 +12,29 @@ const Install = (props: any) => {
   const scope = { ReactUtilityTable };
   const code =
   `function demo() {
-    const [tableData, setTableData] = React.useState([{"first_name": "Dmitri", "last_name": "Pickburn", "email": "dpickburn0@google.fr"},
-    {"first_name": "Darelle", "last_name": "Whitlow", "email": "dwhitlow1@tumblr.com"}]);
+    const [tableData, setTableData] = React.useState([
+    {"first_name": "Dmitri", "last_name": "Pickburn",},
+    {"first_name": "Darelle", "last_name": "Whitlow", }]);
     return (
       <div>
-        <ReactUtilityTable
-          data={tableData} 
+        <ReactUtilityTable data={tableData}           
           columns={[{ title: "Name", field: "first_name", filtering: false },
             {title: "Last Name", field: "last_name"},
-            { title: "Email", field: "email"}]} 
+             ] } 
           options={{
             filtering:true,
-            exportButton: true
-          }} />
-      </div>
-    );
-  }`
+            exportButton: true}} />
+      </div>)}`
   return (
     <>
-      <p>
-        <strong> Installation---Getting Started! </strong>
+      <p style={{margin: "5px 0px", color: "#5c5454"}}>
+        <strong> Installation---  Getting Started! </strong>
         <br></br>
-        Install this package : <strong>npm i react-utility-table </strong>
+        Install this package : <a href="https://www.npmjs.com/package/react-utility-table" >npm i react-utility-table </a>
+        or <a href="https://www.npmjs.com/package/react-utility-table" >click here</a>
       </p>
       <div>
-        <p>
+        <p style={{margin: "5px 0px", color: "#5c5454"}}>
           <strong>Basic example</strong> : Pass <strong>columns</strong> and <strong> data </strong> to the React-Utitlity-Table
         </p>
 
@@ -44,7 +42,7 @@ const Install = (props: any) => {
         scope={scope}
         theme={theme}
       >
-        <Layout code={
+        <Layout showTitle={false} className="installation" code={
           <LiveEditor />
         }
           ui={
