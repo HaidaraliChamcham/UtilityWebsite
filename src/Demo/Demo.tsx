@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { ReactUtilityTable } from 'react-utility-table';
 import { mockutitlity } from '../MockData/mockutitlity';
+import { AnyRecord } from 'dns';
 
 const Demo = (props: any) => {
     const [tableData, setTableData] = useState(mockutitlity);
@@ -16,8 +17,15 @@ const Demo = (props: any) => {
                 <ReactUtilityTable
                     columns={[
                         { title: 'First Name', field: 'first_name', filtering: false },
-                        { title: 'Last Name', field: 'last_name' },
-                        { title: 'Email', field: 'email'},
+                        { title: 'Last Name', field: 'last_name', 
+                        render: (rowData: any) =><input value = {rowData.first_name} type ="button" onClick={(e: any) => alert(rowData.first_name)}/>},
+                        { title: 'Email', field: 'email', editComponent: props => (
+                          <input
+                            type="text"
+                            value={props.value}
+                            onChange={e => props.onChange(e.target.value)}
+                          />
+                        )},
                     ]}
                     data={tableData}
                     

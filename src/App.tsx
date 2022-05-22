@@ -4,7 +4,7 @@ import React from 'react';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
 import PropTypes from 'prop-types';
-import Header from './Mains/Header';
+import Header from './Components/Header';
 import Dashboard from './Mains/Dashboard';
 import Edit from './Mains/Edit';
 import Filter from './Mains/Filter';
@@ -81,7 +81,7 @@ const App = () => {
 
 
         {/* <Box sx={{ width: '100%', paddingBottom: ".8rem", boxShadow: "0px 4px 20px #0000001a" }} className={classes.root}> */}
-        <Box sx={{ width: '100%', boxShadow: "0px 4px 20px #0000001a", background:"#26c6da",marginBottom:"2rem"}} >
+        <Box sx={{ width: '100%', boxShadow: "0px 4px 20px #0000001a",}} >
           <Tabs value={value} onChange={handleChange} className="db-tabs" variant="scrollable"
             scrollButtons="auto" allowScrollButtonsMobile
             aria-label="scrollable auto tabs example" color="#fff">
@@ -127,8 +127,8 @@ const App = () => {
 
       </Grid>
       <footer style={{ position: "fixed", width: "100%", }}>
-
-        <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by Haidarali and Benazir Chamcham</div>
+        <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by <a target={"_blank"} href={"https://www.linkedin.com/in/haidaralichamcham/"}> Haidar </a>
+        and <a target={"_blank"} href={"https://www.linkedin.com/in/benazir-mulla/"}> Benazir</a></div>
       </footer>
     </div>
   );
