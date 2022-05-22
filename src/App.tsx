@@ -9,6 +9,8 @@ import Dashboard from './Mains/Dashboard';
 import Edit from './Mains/Edit';
 import Filter from './Mains/Filter';
 import Selection from './Mains/Selection';
+import Styling from './Mains/Styling';
+import ExportExcel from './Mains/ExcelDownload';
 
 // import { makeStyles } from '@mui/styles';
 
@@ -96,13 +98,13 @@ const App = () => {
         </Box>
         <Grid item xs={12} className="top-margin-tabs" >
           <TabPanel value={value} index={0}>
-            <Dashboard/>
+            <Dashboard />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Edit/>
+            <Edit />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            item3
+            <Styling />
 
           </TabPanel>
           <TabPanel value={value} index={3}>
@@ -113,12 +115,15 @@ const App = () => {
             <Selection />
           </TabPanel>
 
+          <TabPanel value={value} index={5}>
+            <ExportExcel />
+          </TabPanel>
         </Grid>
 
       </Grid>
       <footer style={{ position: "absolute", bottom: "0px", width: "100%", }}>
 
-        <div style={{padding:"5px 10px", textAlign:'right'}}>Created by Haidarali and Benazir Chamcham</div>
+        <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by Haidarali and Benazir Chamcham</div>
       </footer>
     </div>
   );
