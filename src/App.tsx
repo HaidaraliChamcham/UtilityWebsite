@@ -76,10 +76,10 @@ const App = () => {
 
 
         {/* <Box sx={{ width: '100%', paddingBottom: ".8rem", boxShadow: "0px 4px 20px #0000001a" }} className={classes.root}> */}
-        <Box sx={{ width: '100%', boxShadow: "0px 4px 20px #0000001a" }} >
+        <Box sx={{ width: '100%', boxShadow: "0px 4px 20px #0000001a", background:"#26c6da",}} >
           <Tabs value={value} onChange={handleChange} className="db-tabs" variant="scrollable"
             scrollButtons="auto" allowScrollButtonsMobile
-            aria-label="scrollable auto tabs example" color="seconday">
+            aria-label="scrollable auto tabs example" color="#fff">
             {/* <Tab icon={<DashboardOutlinedIcon />} label="Dashboard" /> */}
             <Tab label="Welcome" />
             <Tab label="Edit" />
