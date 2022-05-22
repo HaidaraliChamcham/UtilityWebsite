@@ -14,6 +14,9 @@ export default function Styling() {
         <>
 
             <LiveProvider code={`
+        //import React from 'react';
+        //import { ReactUtilityTable } from 'react-utility-table';
+        
          function demo() {
             const [tableData, setTableData] = React.useState([
                 { firstName: "Benazir", surname: "Chamcham" },

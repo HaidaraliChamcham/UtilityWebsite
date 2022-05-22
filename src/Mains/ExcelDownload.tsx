@@ -14,8 +14,8 @@ export default function ExportExcel() {
     <>
 
       <LiveProvider code={`
-
-      // Please uncomment the commented lines of code after install  react-utility-table to access full features
+        //import React from 'react';
+        //import { ReactUtilityTable } from 'react-utility-table';
       
          function demo() {
           const [tableData, setTableData] = React.useState([

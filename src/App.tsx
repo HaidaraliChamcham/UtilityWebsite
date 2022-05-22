@@ -11,6 +11,7 @@ import Filter from './Mains/Filter';
 import Selection from './Mains/Selection';
 import Styling from './Mains/Styling';
 import ExportExcel from './Mains/ExcelDownload';
+import Others from './Mains/Others';
 
 // import { makeStyles } from '@mui/styles';
 
@@ -118,10 +119,14 @@ const App = () => {
           <TabPanel value={value} index={5}>
             <ExportExcel />
           </TabPanel>
+
+          <TabPanel value={value} index={6}>
+            <Others />
+          </TabPanel>
         </Grid>
 
       </Grid>
-      <footer style={{ position: "absolute", bottom: "0px", width: "100%", }}>
+      <footer style={{ position: "fixed", width: "100%", }}>
 
         <div style={{ padding: "5px 10px", textAlign: 'right' }}>Created by Haidarali and Benazir Chamcham</div>
       </footer>

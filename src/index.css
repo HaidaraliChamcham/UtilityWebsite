@@ -46,6 +46,12 @@ body ::-webkit-scrollbar {
     color: #92929c;
 }
 
+.Mui-selected {
+    color: #000 !important;
+    background-color: #11bce7 !important;
+    border-radius: 2rem !important;
+}
+
 .prism-code {
     background-color: #091926 !important;
     border-radius: 5px;
