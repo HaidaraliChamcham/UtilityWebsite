@@ -9,6 +9,32 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+body ::-webkit-scrollbar-track {
+    background: #f8f8f8;
+    box-shadow: inset 0 0 5px #f8f8f8;
+    -webkit-box-shadow: inset 0 0 5px #f8f8f8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+body ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #cbd5e1;
+    -webkit-box-shadow: inset 0 0 5px #cbd5e1;
+    -webkit-border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-corner {
+    background: #f8f8f8;
+}
+
+body ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
 .utility-web-footer {
     margin-top: 1rem;
     padding: 0.1rem;
@@ -22,6 +48,9 @@ code {
 
 .prism-code {
     background-color: #091926 !important;
+    border-radius: 5px;
+    height: 25rem;
+    overflow-y: scroll;
 }
 
 a:link {

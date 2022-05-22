@@ -7,7 +7,7 @@ import Layout from '../Components/Layout';
 import theme from 'prism-react-renderer/themes/nightOwl'
 
 
-export default function Edit() {
+export default function Filter() {
   const scope = { ReactUtilityTable };
   
   return (
@@ -25,6 +25,10 @@ export default function Edit() {
                 data={tableData} columns={[
                   { title: "Name", field: "firstName" }
                 ]}
+
+                options={{
+                    filtering:true
+                }}
               />
             </div>
           );
